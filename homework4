@@ -1,1 +1,40 @@
-aaa
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>bodlogo 1</h2>
+
+<p id="1"></p>
+
+<script >
+var student = {
+name: "Emma",
+sclass: "VI",
+age: 18,
+};
+
+delete student.age;
+document.getElementById("1").innerHTML = student.name + student.sclass + student.age;
+</script>
+
+<h3>bodlogo 2</h3>
+<p id ="2"> </p>
+<script>
+	var shtudent = {
+name: "Emma",
+sclass: "VI",
+age: 18,
+};
+	var size = Object.keys(shtudent).length;
+	document.getElementById("2").innerHTML = size;
+</script>
+
+	<h4>bodlogo 3</h4>
+	<p id ="3"></p>
+	<script>
+		var city = ["London","Ulaanbaatar","Seoul","Berlin"];
+	var lastItem = city[city.length - 1]
+	document.getElementById("3").innerHTML = lastItem;
+</script>
+</body>
+</html> 
